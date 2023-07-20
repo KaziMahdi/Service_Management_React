@@ -1,0 +1,106 @@
+.dashboard-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .chart-container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .example-card {
+    width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    background: #d2f1ff;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 10px;
+    
+  }
+  .example-card:before{
+    content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F7C04A;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  }
+  .example-card:hover, .example-card:focus, .example-card:active {
+    color: white;
+  }
+  .example-card:hover:before, .example-card:focus:before, .example-card:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+ @-webkit-keyframes hvr-icon-pulse-grow {
+    to {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  }
+  @keyframes hvr-icon-pulse-grow {
+    to {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  }
+  
+  .example-card .mat-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .example-card:hover .mat-icon, .example-card:focus .mat-icon, .mat-icon-pulse-grow:active .mat-icon {
+    -webkit-animation-name: hvr-icon-pulse-grow;
+    animation-name: hvr-icon-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  
+  .dash{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    
+  }
+  .more{
+    border: 2px solid black;
+  }
+  h3{
+    background-color: rgb(238, 240, 240);
+    height: 60px;
+    padding: 10px 0 0 10px;
+  }
+  .card-body{
+    width: 80%;
+  }

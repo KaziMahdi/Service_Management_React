@@ -1,0 +1,26 @@
+.hov {
+    display: block;
+    font-size: 16px;
+    
+    color: grey;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .hov:hover {
+    background: #0d3b5c;
+    color:#FFFFFF;
+  }
+  
+  .sub {
+    display: block;
+    font-size: 16px;
+    height:30px ;
+    color: rgb(14, 6, 6);
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .sub:hover {
+    background: #f3f0f0;
+    
+  }
+  
